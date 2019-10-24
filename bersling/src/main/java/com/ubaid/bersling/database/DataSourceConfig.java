@@ -15,11 +15,19 @@ import java.sql.Connection;
 import com.mysql.cj.jdbc.MysqlDataSource;
 
 
+/**
+ * This class give the connection
+ * @author UbaidurRehman
+ *
+ */
 public class DataSourceConfig
 {
 	private String databaseName;
 	private String password;
 
+	/**
+	 * getting database name and password from the properties file and set the database name and password
+	 */
 	public DataSourceConfig()
 	{
 		File file = new File(getClass().getClassLoader().getResource("app.properties").getFile());
@@ -51,6 +59,9 @@ public class DataSourceConfig
 		
 	}
 	
+	/**
+	 * this method run the sql.data script
+	 */
 	public void runScript()
 	{
 		ScriptRunner sr = new ScriptRunner(getConnection());
@@ -67,8 +78,10 @@ public class DataSourceConfig
 	}
 
 	
-	//the following method is static method for all 
-	//which return connection 
+	/**
+	 * 
+	 * @return an instance of connection
+	 */
 	public Connection getConnection()
 	{
 				

@@ -5,6 +5,11 @@ import com.ubaid.bersling.database.DataSourceConfig;
 import com.ubaid.bersling.documents.PopulateDocuments;
 import com.ubaid.bersling.documents.PopulateDocumentsWithOutJSON;
 
+/**
+ * main class, which initiate different classes for different works
+ * @author UbaidurRehman
+ *
+ */
 public class App {
 	public static void main(String [] args)
 	{
