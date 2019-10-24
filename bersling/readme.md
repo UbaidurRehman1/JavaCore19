@@ -13,5 +13,5 @@
 	<li><strong>cd JavaCore19/bersling</strong></li>
 	<li><strong>mvn test clean compile assembly:single</strong></li>
 	<li><strong>cd target</strong></li>
-	<li><strong>java -jar bersling-1.jar</strong> to run the jar</li>
+	<li><strong>java -jar bersling_1.jar</strong> to run the jar</li>
 </ol>
