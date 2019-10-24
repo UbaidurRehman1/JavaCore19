@@ -64,13 +64,13 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.ubaid.app.App</mainClass>
+							<mainClass>com.ubaid.bersling.App</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<appendAssemblyId>false</appendAssemblyId>
+					
 					<executions>
 						<execution>
 							<phase>package</phase>
