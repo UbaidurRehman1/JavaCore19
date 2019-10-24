@@ -3,12 +3,14 @@ package com.ubaid.bersling.documents;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Arrays;
+
 import com.ubaid.bersling.database.DataSourceConfig;
 
 public class PopulateDocuments {
 	String q_document = "insert into documents(id, metadata) values(?, JSON_SET('{}', '$.difficulty', ?))";
-	String documents_drop_index = "ALTER TABLE `documents` drop primary key";
-	String documents_add_index = "ALTER TABLE `documents` add primary key(id)";
+//	String documents_drop_index = "ALTER TABLE `documents` drop primary key";
+//	String documents_add_index = "ALTER TABLE `documents` add primary key(id)";
 	
 	public PopulateDocuments()
 	{
@@ -18,8 +20,6 @@ public class PopulateDocuments {
 		try
 		{
 			PreparedStatement st = con.prepareStatement(q_document);
-			PreparedStatement drop_index = con.prepareStatement(documents_drop_index);
-			PreparedStatement add_index = con.prepareStatement(documents_add_index);
 
 			for(int i = 1; i <= 10000000; i++)
 			{
@@ -28,13 +28,13 @@ public class PopulateDocuments {
 				st.addBatch();
 				if(i % 100000 == 0)
 				{
-					System.err.println(i);
-//					st.executeBatch();
-//					System.err.println("Batch Executed Successfully");
+					System.err.println("[INFO]: adding " + i + " entries in JSON document table");
 				}
 
 			}
-			st.executeBatch();
+			System.err.println("[INFO]: Adding Batch in JSON document table");
+			int[] added = st.executeBatch();
+			System.err.println("[INFO]: Added: " + Arrays.asList(added));
 		}
 		catch (SQLException e)
 		{

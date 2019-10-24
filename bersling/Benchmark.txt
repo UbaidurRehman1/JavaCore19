@@ -1,0 +1,103 @@
+[Info]: Benchmark start
+
+
+Benchmark for Document Table having JSON Field
+
+
+Simulating for 1 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 1 concurrent queries  is 7.324000 seconds
+
+
+
+
+Simulating for 2 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 2 concurrent queries  is 9.976000 seconds
+
+
+
+
+Simulating for 4 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 4 concurrent queries  is 14.416000 seconds
+
+
+
+
+Simulating for 8 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 8 concurrent queries  is 19.659000 seconds
+
+
+
+
+Simulating for 16 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 16 concurrent queries  is 48.038000 seconds
+
+
+
+
+Simulating for 32 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 32 concurrent queries  is 150.468000 seconds
+
+
+
+
+Simulating for 64 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 64 concurrent queries  is 268.731000 seconds
+
+
+
+
+Simulating for 128 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 128 concurrent queries  is 495.016000 seconds
+
+
+
+
+Benchmark for Document Table which do not having JSON Field
+
+
+Simulating for 1 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 1 concurrent queries  is 0.033000 seconds
+
+
+
+
+Simulating for 2 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 2 concurrent queries  is 0.005000 seconds
+
+
+
+
+Simulating for 4 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 4 concurrent queries  is 0.006000 seconds
+
+
+
+
+Simulating for 8 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 8 concurrent queries  is 0.011000 seconds
+
+
+
+
+Simulating for 16 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 16 concurrent queries  is 0.017000 seconds
+
+
+
+
+Simulating for 32 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 32 concurrent queries  is 0.029000 seconds
+
+
+
+
+Simulating for 64 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 64 concurrent queries  is 0.062000 seconds
+
+
+
+
+Simulating for 128 concurrent query (retrieve all the entries with difficulty: '3')
+The total time for 128 concurrent queries  is 0.145000 seconds
+
+
