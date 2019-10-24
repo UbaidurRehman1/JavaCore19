@@ -30,7 +30,7 @@ public class DataSourceConfig
 	 */
 	public DataSourceConfig()
 	{
-		File file = new File(getClass().getClassLoader().getResource("app.properties").getFile());
+		File file = new File("resources/app.properties");
 		try
 		{
 			BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -65,7 +65,7 @@ public class DataSourceConfig
 	public void runScript()
 	{
 		ScriptRunner sr = new ScriptRunner(getConnection());
-		File file = new File(getClass().getClassLoader().getResource("data.sql").getFile());
+		File file = new File("resources/data.sql");
 		try
 		{
 			Reader reader = new BufferedReader(new FileReader(file));
